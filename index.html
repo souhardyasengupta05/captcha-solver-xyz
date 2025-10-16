@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Captcha Solver Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Captcha Solver</h1>
+    <section class="field">
+      <label>Captcha URL (from ?url= parameter):</label>
+      <div id="urlDisplay" class="url-display" aria-label="captcha url display"></div>
+    </section>
+    <section class="captcha-area" aria-label="captcha area">
+      <img id="captchaImage" alt="Captcha image will appear here" />
+      <div class="info">
+        <div id="status" class="status" aria-live="polite"></div>
+        <div id="solution" class="solution" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
